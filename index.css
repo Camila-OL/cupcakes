@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+.area-int {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.align {
+    max-width: 400px;
+    background-image: linear-gradient(to bottom, #fff, #f8a6ac);
+    box-shadow: 0 0 5px #f8a6ac, 0 0 10px #f8a6ac, 0 0 20px #f8a6ac,
+    0 0 30px #f8a6ac, 0 0 40px #f8a6ac;
+}
+h1 {
+    font-family: 'Dancing Script', cursiva;
+    text-align: center;
+    color: #f8a6ac;
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: #fff;
+}
+h1 p {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+}
+.opcoes {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+::-webkit-scrollbar {
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #f4babe;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #f8a6ac;
+    border-radius: 10px;
+    width: 20px;
+}
+button {
+    background-color: transparent;
+    border: none;
+    margin-right: 5%;
+    margin-bottom: 10%;
+}
+.opcoes img {
+    margin-top: 15%;
+    width: 150px;
+    background-color: #fff;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #f8a6ac, 0 0 10px #f8a6ac, 0 0 20px #f8a6ac,
+    0 0 30px #f8a6ac, 0 0 40px #f8a6ac;
+}
+.opcoes span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #d42834;
+    color: #fff;
+    cursor: pointer;
+}
+.car {
+    overflow-x: scroll;
+    display: none;
+    background-image: linear-gradient(to top, #fff, #f8a6ac);
+}
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #d42834;
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: #fff;
+}
+.car li {
+    font-family: 'Dancing Script', cursiva;
+    list-style-type: none;
+    background-color: #f8a6ac;
+    color: #d42834;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #d42834, 0 0 10px #d42834, 0 0 20px #d42834,
+    0 0 30px #fff, 0 0 40px #fff;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    height: 85px;
+    margin-top: 15%;
+    position: relative;
+    animation: jump 1s infinite alternate;
+}
+.car img {
+    width: 200px;
+    height: 220px;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+.car span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
